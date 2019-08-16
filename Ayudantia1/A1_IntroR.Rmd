@@ -32,7 +32,7 @@ h1.title {
  
 ---
 
-## **Objetivos**
+# **Objetivos**
 
 1. Presentar el software estadístico `R` como una herramienta para el procesamiento y análisis de datos.
 2. Presentar RStudio como medio a partir del cual se utiliza `R`. 
@@ -40,7 +40,7 @@ h1.title {
 
 ---
 
-## **¿Qué es `R`?**
+# **¿Qué es `R`?**
 
 Es un entorno y lenguaje de programación gratuito y de código abierto (freeware). Más que un software estadístico como `SPSS` o `STATA`, `R` es un marco para el análisis estadístico con una fuerte orientación a la ciencia de datos. Se crea bajo un nuevo paradigma de ciencia abierta en 1993 por Ross Ihaka y Robert Gentleman con el foco en 4 aspectos claves:
 
@@ -65,20 +65,18 @@ Fuente: [https://arcruz0.github.io/libroadp/](https://arcruz0.github.io/libroadp
 
 ---
 
-## **Pasos para instalar `R`**
+# **Pasos para instalar `R`**
 
-<p style="color:RoyalBlue">
-**1. Visitar la página de [CRAN](https://cran.r-project.org/) (Comprehensive R Archive Network)**
-</p>
+## 1. Visitar la página de [CRAN](https://cran.r-project.org/) (Comprehensive R Archive Network)
+
 
 
 ![](InstallR.png)
 
 ---
 
-<p style="color:RoyalBlue">
-**2. Seleccionar versión según sistema operativo**
-</p>
+## 2. Seleccionar versión según sistema operativo
+
 
 + **Windows**:
 
@@ -90,21 +88,20 @@ Fuente: [https://arcruz0.github.io/libroadp/](https://arcruz0.github.io/libroadp
 
 ---
 
-<p style="color:RoyalBlue">
-**3. Seguir los pasos de instalación indicados para su sistema operativo y abrir R**
-</p>
+
+## 3. Seguir los pasos de instalación indicados para su sistema operativo y abrir R
 
 ![Visualización de R para Windows (izquierda) y Mac (derecha)](R.png)
 
 ---
 
-## **¿Qué es `RStudio`?**
+# **¿Qué es `RStudio`?**
 
 Es un entorno de desarrollo integrado para `R` (interfaz gráfica) que permite una navegación más "amigable" y dinámica dentro de la plataforma de R.Cuenta con una consola, editor de resaltado de sintaxis que admite la ejecución directa de código y herramientas para el trazado, el historial, la depuración y la gestión del espacio de trabajo para facilitar el **reporte y reproducibilidad de los análisis**. Esto favorece el desarrollo de procedimientos de ciencia abierta para la investigación. 
 
 ---
 
-## **Instalando `RStudio`**
+# **Instalando `RStudio`**
 
 <p style="color:RoyalBlue">
 **1. Visitar la página de [RStudio.com](https://www.rstudio.com/products/rstudio/download/#download), descarga y sigue las instrucciones de instalación**
@@ -114,7 +111,7 @@ Es un entorno de desarrollo integrado para `R` (interfaz gráfica) que permite u
 
 ---
 
-## **Conociendo el entorno de `RStudio`**
+# **Conociendo el entorno de `RStudio`**
 
 ![Fuente: https://www.rstudio.com/resources/cheatsheets](Rstudio.png)
 
@@ -122,7 +119,7 @@ Es un entorno de desarrollo integrado para `R` (interfaz gráfica) que permite u
 
 ---
 
-## **`R` para el análisis de datos sociales**
+# **`R` para el análisis de datos sociales**
 
 <img src="spssvr.jpg" width="500" height="500">
 
@@ -148,9 +145,11 @@ Fuente: [Fuente: https://www.r-bloggers.com/i-dont-want-to-learn-r-spss-is-fine-
 
 ---
 
-## **Interactuando con `R` y `RStudio`**
+# **Interactuando con `R` y `RStudio`**
 
-<p style="color:RoyalBlue">**Sintaxis:**</p> En el archivo de código simple `Rscript` hay caracteres especiales para trabajar y se guarda por defecto con extensión `.R`.
+## Sintaxis
+
+En el archivo de código simple `Rscript` hay caracteres especiales para trabajar y se guarda por defecto con extensión `.R`.
 
 ```{r sintaxis, echo=TRUE, eval=TRUE}
 # : Comentarios que no se ejecutan como comandos
@@ -160,7 +159,9 @@ Fuente: [Fuente: https://www.r-bloggers.com/i-dont-want-to-learn-r-spss-is-fine-
 
 ---
 
-<p style="color:RoyalBlue">**Aritmética Básica:**</p> Se puede utilizar para calculadora (este es un simple uso para una plataforma multianálisis).
+## Aritmética Básica 
+
+Se puede utilizar para calculadora (este es un simple uso para una plataforma multianálisis).
 
 ```{r artimetica base, echo=TRUE, eval=TRUE}
 2+3 #Suma
@@ -172,7 +173,9 @@ Fuente: [Fuente: https://www.r-bloggers.com/i-dont-want-to-learn-r-spss-is-fine-
 
 ---
 
-<p style="color:RoyalBlue">**Funciones:**</p> Se pueden utilizar funciones predeterminadas en `R`.
+## Funciones
+
+Se pueden utilizar funciones predeterminadas en `R`.
 
 ```{r funciones, echo=TRUE, eval=TRUE}
 log(1000) #Por DEFAULT es logaritmo natural, en base a euler 2,718.
@@ -194,7 +197,9 @@ log(100,10) #= log(100, base=10)
 
 ---
 
-<p style="color:RoyalBlue">**Vectores y variables:**</p> Objeto unidimensional constituido por elementos del mismo tipo.
+## Vectores y variables
+
+Objeto unidimensional constituido por elementos del mismo tipo.
 
 ```{r vectores, echo=TRUE, eval=TRUE}
 c(1) #Vector de un elemento
@@ -218,7 +223,7 @@ seq(0, 1, length=11)
 
 ---
 
-<p style="color:RoyalBlue">**Operaciones con vectores numéricos**</p>
+## Operaciones con vectores numéricos
 
 ```{r operaciones, echo=TRUE, eval=TRUE}
 #Operaciones aritméticas
@@ -237,7 +242,9 @@ c(1, 2 , 3 , 4) + c(4, 3, 2) #Produce warning cuando no son múltiplos
 
 ---
 
-<p style="color:RoyalBlue">**Matrices:**</p> Objeto bidimensional constituido por filas y columnas de elementos del mismo tipo.
+## Matrices
+
+Objeto bidimensional constituido por filas y columnas de elementos del mismo tipo.
 
 ```{r matrices, echo=TRUE, eval=TRUE}
 x <- matrix(1:9,3,3)
@@ -252,7 +259,9 @@ z
 
 ---
 
-<p style="color:RoyalBlue">**Objetos:**</p> R es un programa orientado a objetos, los que son creados por funciones, que en su forma más general sería: `Objeto <- función` o de manera equivalente `Objeto = función`. Hay diferentes tipos de objetos: vectores, factores, matrices, marco/base de datos (entre otros) Veamoslo en el siguiente código: 
+## Objetos
+
+R es un programa orientado a objetos, los que son creados por funciones, que en su forma más general sería: `Objeto <- función` o de manera equivalente `Objeto = función`. Hay diferentes tipos de objetos: vectores, factores, matrices, marco/base de datos (entre otros) Veamoslo en el siguiente código: 
 
 ```{r objetos, echo=TRUE, eval=TRUE}
 ##Crear objetos
@@ -268,7 +277,9 @@ sexo
 
 ---
 
-<p style="color:RoyalBlue">**Fijar directorio de trabajo:**</p> Por temas de reproducibilidad, se recomienda establecer directorio de trabajo (ubicación en el pc), donde se buscan y guardan los archivos que se vayan utilizando y/o creando durante el análisis. 
+## Fijar directorio de trabajo
+
+Por temas de reproducibilidad, se recomienda establecer directorio de trabajo (ubicación en el pc), donde se buscan y guardan los archivos que se vayan utilizando y/o creando durante el análisis. 
 
 ```{r directorio, echo=TRUE, eval=FALSE}
 getwd() # Se obtiene el directorio de trabajo actual
@@ -281,7 +292,9 @@ setwd("~/Dropbox/SOL201S_Datos_III/SOL201S_2019/Ayudantia/SOL201S_Datos_3/Ayudan
 
 ---
 
-<p style="color:RoyalBlue">**Librerías o Paquetes:**</p> Conjunto de funciones que tienen una relación entre ellas y que usualmente vienen acompañadas de ficheros de ayuda (documentación). Algunas librerías vienen preinstaladas, otras específicas hay que instalarlas de acuerdo a las necesidades del usuario.
+## Librerías o Paquetes
+
+Conjunto de funciones que tienen una relación entre ellas y que usualmente vienen acompañadas de ficheros de ayuda (documentación). Algunas librerías vienen preinstaladas, otras específicas hay que instalarlas de acuerdo a las necesidades del usuario.
 
 ```{r paquetes, echo=TRUE, eval=FALSE}
 library() #Puedo revisar los paquetes instalados
@@ -307,17 +320,19 @@ library(car)
 
 ---
 
-## **Links de referencia**
+# **Links de referencia**
 
 En `R` hay múltiples referencias, paquetes, herramientas y formas de hacer las cosas. Para no intimidarse con tal magnitud de información les dejamos algunos links que pueden ser de ayuda: 
 
-**Libro base del curso**
+## Libro base del curso
 
 [Fox, John y Sanford Weisberg (2019). An R Companion to Applied Regression. Third Edition. SAGE.](https://www.dropbox.com/sh/t0s4r6yuzgcwt10/AAB9DxspiUmAqihGAITmhQpca?dl=0)
 
 ![](fox.jpg)
 
-**Manuales:** 
+---
+
+## Manuales
 
 Son excelentes herramientas para iniciarse en `R`, te recomendamos revisarlos con calma y tener mucha paciencia y perseverancia. Es un poco difícil entender la lógica del software en un principio pero solo es cosa de práctica. 
 
@@ -329,7 +344,9 @@ Son excelentes herramientas para iniciarse en `R`, te recomendamos revisarlos co
 
 - [RStudio Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/#ide): Otros recursos en **inglés**.
 
-**Foros:**
+---
+
+## Foros
 
 Para los que alguna vez fuimos nuevos en `R` y `RStudio` nos sirvió bastante ver las preguntas y respuestas de otras personas en todo el mundo. De hecho, casi todas nuestras preguntas ya fueron respondidas por otras personas (una de las ventajas del paradigma de la ciencia abierta) por lo que solo debemos buscar. Aunque, ojo, la mayoría de ellas están en inglés: 
 
@@ -337,7 +354,9 @@ Para los que alguna vez fuimos nuevos en `R` y `RStudio` nos sirvió bastante ve
 
 - [Stackoverflow](https://stackoverflow.com/questions/tagged/r)
 
-**Ayudantías:** 
+---
+
+## Ayudantías
 
 Puedes encontrar las carpetas con las ayudantías y bases de datos en el siguiente [Link](https://github.com/JDConejeros/SOL201S_Datos_3)  
 
