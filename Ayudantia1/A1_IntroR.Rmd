@@ -1,24 +1,26 @@
 ---
-title: "Ayudantía I: Introducción a `R`"
-subtitle: 'SOL201S - Análisis Datos III'
-author: 
-  - name: Luis Maldonado 
-    affiliation: Profesor Instituto de Sociología PUC
-    email: lmaldona@uc.cl
-  - name: Catalina Rufs 
-    email: cirufs@uc.cl
-    affiliation: Estudiante Magíster en Sociología PUC
-  - name: José Daniel Conejeros
-    email: jdconejeros@uc.cl
-    affiliation: Estudiante Magíster en Sociología PUC
+title: 'Ayudantía I: Introducción a `R`'
+author:
+- affiliation: Profesor Instituto de Sociología PUC
+  email: lmaldona@uc.cl
+  name: Luis Maldonado
+- affiliation: Estudiante Magíster en Sociología PUC
+  email: cirufs@uc.cl
+  name: Catalina Rufs
+- affiliation: Estudiante Magíster en Sociología PUC
+  email: jdconejeros@uc.cl
+  name: José Daniel Conejeros
 date: '`r format(Sys.time(), "%d/%m/%Y")`'
-output: 
+output:
   html_document:
-    theme: cosmo
-    highlight: tango
     code_folding: show
+    highlight: tango
+    theme: cosmo
     toc: yes
-    toc_float: true
+    toc_float: yes
+  pdf_document:
+    toc: yes
+subtitle: SOL201S - Análisis Datos III
 ---
 <style type="text/css">
 h1.title {
@@ -34,7 +36,7 @@ h1.title {
 
 1. Presentar el software estadístico `R` como una herramienta para el procesamiento y análisis de datos.
 2. Presentar RStudio como medio a partir del cual se utiliza `R`. 
-3. Identificar los principales conceptos a la hora de comprender el lenguaje de programación en `R` y la interacción con la plataforma de `RStudio`. 
+3. Identificar los principales conceptos a la hora de comprender el lenguaje de programación en `R` e interactuar con la plataforma de `RStudio`. 
 
 ---
 
